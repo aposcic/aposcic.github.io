@@ -1,22 +1,71 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.pretty-face {
+  margin-bottom: 1rem;
+  background: linear-gradient(180deg, #4893a5 15%, #2c4353 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.space {
+  font-family: 'Space Mono', monospace;
+}
+.large {
+  font-size:4.0rem;
+}
+.medium {
+  font-size:3.0rem;
+}
+.small {
+  font-size:2.0rem;
+}
+.tiny {
+  font-size:1.5rem;
+}
+.links {
+  font-size:1.5rem;
+}
+
+/*noinspection CssReplaceWithShorthandSafely*/
+a {
+  background:
+  linear-gradient(
+    to right,
+    rgba(72,147,165),
+    rgba(72,147,165)
+  ),
+  linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  text-decoration: none;
+}
+a:link {
+  color: rgba(113, 177, 193, 0.65);
+}
+a:visited {
+  color: rgba(113, 177, 193, 0.65);
+}
+a:active {
+  color: rgba(113, 177, 193, 0.65);
+}
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+
 .main {
-  font-family: 'Special Elite', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(211, 203, 203);
-}
-
-.main h1 {
-  font-size: 4.0rem;
-}
-
-.main h2 {
-  font-size: 3.5rem;
-}
-
-.main a {
-  color: rgb(83, 83, 83);
-  text-decoration: none;
+  background-color: #333333;
 }
 
 .content {
@@ -27,40 +76,37 @@
   flex-wrap: wrap;
 }
 
-.about {
-  font-size: 1.5rem;
-}
-
-.contact {
-  font-size: 1.5rem;
-}
-
-.contact-label {
-  margin-bottom: 15px;
-}
-
-.contact-name {
+.contact-email {
   border: none;
-  background-color: rgb(177, 177, 177);
+  background-color: rgba(113, 177, 193, 0.65);
   height: 1.5rem;
+  border-radius: 3px;
   width: 300px;
 }
 
 .contact-message {
   border: none;
-  background-color: rgb(177, 177, 177);
+  background-color: rgba(113, 177, 193, 0.65);
+  border-radius: 3px;
   width: 300px;
 }
 
 .contact-submit {
   border: none;
   background-color: rgb(211, 203, 203);
-  font-family: 'Special Elite', cursive;
-  font-size: 1.25rem;
   height: 2.5rem;
 }
 
-@font-face {
-  font-family: 'Special Elite';
-  src: URL('fonts/special-elite.regular.ttf') format('truetype');
+textarea:focus, input:focus{
+  outline: none;
+}
+
+img {
+  max-width: 2.0rem;
+  opacity: 0.65;
+  padding-right: 25px;
+}
+
+.plain-link {
+  background: none;
 }
