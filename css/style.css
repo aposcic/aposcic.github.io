@@ -1,6 +1,11 @@
 /*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+html {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
 .pretty-face {
   margin-bottom: 1rem;
   background: linear-gradient(180deg, #4893a5 15%, #2c4353 85%);
