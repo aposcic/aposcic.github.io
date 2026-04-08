@@ -125,3 +125,14 @@ img {
 .plain-link {
   background: none;
 }
+
+.extra-toggle {
+  cursor: pointer;
+  font-style: italic;
+  padding-bottom: 2px;
+  opacity: 0.65;
+}
+
+#extra-links {
+  margin-top: 0.5rem;
+}
